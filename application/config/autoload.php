@@ -1,5 +1,6 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -58,7 +59,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('database', 'session', 'form_validation', 'email', 'upload', 'pagination');
+$autoload['libraries'] = array('database', 'session', 'form_validation', 'email', 'upload', 'pagination', 'template');
 
 /*
 | -------------------------------------------------------------------
@@ -89,7 +90,7 @@ $autoload['drivers'] = array();
 |
 |	$autoload['helper'] = array('url', 'file');
 */
-$autoload['helper'] = array('url', 'form', 'file', 'html', 'text', 'date', 'inflector', 'security', 'string', 'array', 'language', 'cookie', 'directory', 'download', 'email', 'file', 'html', 'inflector', 'language', 'number', 'path', 'security', 'smiley', 'string', 'text', 'typography', 'xml', 'captcha', 'date', 'directory', 'email', 'file', 'form', 'html', 'inflector', 'language', 'number', 'path', 'security', 'smiley', 'string', 'text', 'typography', 'xml');
+$autoload['helper'] = array('url', 'form', 'file', 'html', 'date', 'security','cookie', 'download', 'email', 'number');
 
 /*
 | -------------------------------------------------------------------
