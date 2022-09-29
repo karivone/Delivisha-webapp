@@ -2,7 +2,7 @@
 Delivisha Web Application
 ###################
 
-Delivisha is a logistics application that allows users to track their packages and shipments. It is a web application that is built using 
+Delivisha is a logistics application that allows users to place their orders and track their packages and shipments. It is a web application that is built using 
 the Codeigniter framework. It is a work in progress and is not yet ready for production.
 
 *******************
