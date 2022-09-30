@@ -29,11 +29,28 @@
 									<div class="login-social">
 										<a href="javascript:void(0);" class="btn font-w800 d-block my-4"><i class="fa fa-truck-front me-2 fa-lg"></i>Request a Delivery</a>
 										<a href="javascript:void(0);" class="btn font-w800 d-block my-4"><i class="fa fa-location-dot me-2 fa-lg"></i>Track your Order</a>
-										<a href="javascript:void(0);" class="btn font-w800 d-block my-4"><i class="fa fa-phone me-2 fa-lg"></i> Contact us Now</a>
+										<a href="<?= site_url('contact') ?>" class="btn font-w800 d-block my-4"><i class="fa fa-phone me-2 fa-lg"></i> Contact us Now</a>
+									</div>
+
+									<div class="socials mb-4">
+										<button type="button" class="btn btn-sm btn-facebook mb-3">
+											Facebook
+											<span class="btn-icon-end"><i class="fab fa-facebook-f"></i></span>
+										</button>
+
+										<button type="button" class="btn btn-sm btn-instagram mb-3">
+											Instagram
+											<span class="btn-icon-end"><i class="fab fa-instagram"></i></span>
+										</button>
+
+										<button type="button" class="btn btn-sm btn-whatsapp mb-3">
+											Whatsapp
+											<span class="btn-icon-end"><i class="fab fa-whatsapp"></i></span>
+										</button>
 									</div>
 
 									<div class="text-center">
-										<button type="submit" class="btn btn-primary btn-block blinking-button">Sign Me In</button>
+										<button id="goToLogin" type="submit" login_url="<?= base_url('login') ?>" class="btn btn-primary btn-block blinking-button">Sign Me In</button>
 									</div>
 								</div>
 							</div>

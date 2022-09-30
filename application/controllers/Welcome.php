@@ -4,30 +4,60 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Welcome extends CI_Controller
 {
-	public function __construct()
+    public function __construct()
     {
         parent::__construct();
     }
-	 
+
     /**
      * @param - This function loads the landing page for the application
      * @author - Dennis Otieno
      */
     public function index()
     {
-		$data = array(
-			'title' => 'Welcome to Delivisha logistics',
-		);
+        $data = array(
+            'title' => 'Welcome to Delivisha logistics',
+        );
         $this->template->load('public', 'default', 'index', $data);
     }
 
-	// Function for loading tracking page
-	public function tracking()
+    // Function for loading tracking page
+    public function tracking()
+    {
+        $data = array(
+            'title' => 'Welcome to Delivisha logistics',
+        );
+
+        $this->template->load('public', 'default', 'tracking/index', $data);
+    }
+
+    // Function for loading contact page
+    public function contact()
+    {
+        $data = array(
+            'title' => 'Talk to us, let us know how we can help.',
+        );
+
+        $this->template->load('public', 'default', 'contact/index', $data);
+    }
+
+	// This function is for sending message to the backend
+	public function send_message()
 	{
+		// Check if request is AJAX
+		if (!$this->input->is_ajax_request()) {
+			return false;
+		}
+
+		// Get data from the form inputs and sanitize
 		$data = array(
-			'title' => 'Welcome to Delivisha logistics',
+			'full_name' => html_escape($this->input->post('')),
+			'email' => html_escape($this->input->post('')),
+			'phone' => html_escape($this->input->post('')),
+			'subject' => html_escape($this->input->post('')),
+			'message' => html_escape($this->input->post(''))
 		);
 
-		$this->template->load('public', 'default', 'tracking/index', $data);
+		// Call the model and pass data to it
 	}
 }

@@ -11,15 +11,17 @@
 <!-- Added -->
 <script src="<?= base_url() ?>public/assets/vendor/jquery-smartwizard/dist/js/jquery.smartWizard.js" type="text/javascript"></script>
 
+<!-- main file Scripts for JavaScript -->
 <script>
 	$(document).ready(function(){
 		// SmartWizard initialize
 		$('#smartwizard').smartWizard(); 
 	});
+
+	// Go to login
+	$(document).on('click', '#goToLogin', function() {
+		window.location.href = $(this).attr('login_url');
+	})
 </script>
 
 </body>
-<!-- main file Scripts for JavaScript -->
-<script>
-	// Some code here...
-</script>

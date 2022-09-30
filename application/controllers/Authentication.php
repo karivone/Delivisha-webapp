@@ -16,12 +16,21 @@ class Authentication extends CI_Controller
     // This functions loads the login page
     public function index()
     {
-        $this->template->load('public', 'default', 'auth/login');
+        $data = array(
+            'title' => 'Provide your credentials',
+        );
+        $this->template->load('public', 'default', 'auth/login', $data);
     }
 
     // This function loads the registration page
     public function registration()
     {
         $this->template->load('public', 'default', 'auth/signup');
+    }
+
+    // Function for loading login page
+    public function login()
+    {
+        // Some code here...
     }
 }
