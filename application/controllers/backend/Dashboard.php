@@ -16,6 +16,10 @@ class Dashboard extends CI_Controller
     // This function loads the dashboard landing page
     public function index()
     {
-        $this->template->load('admin', 'default', 'index');
+        $data = array(
+            'title' => 'Welcome to Delivisha Backend',
+        );
+
+        $this->template->load('admin', 'default', 'index', $data);
     }
 }

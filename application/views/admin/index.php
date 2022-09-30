@@ -1,1 +1,6 @@
-<h1>This is the Admin Dashboard for Delivisha</h1>
+<!-- Content body start -->
+<div class="content-body">
+    <!-- row -->
+    <div class="container-fluid"></div>
+</div>
+
