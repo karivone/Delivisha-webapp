@@ -20,4 +20,14 @@ class Welcome extends CI_Controller
 		);
         $this->template->load('public', 'default', 'index', $data);
     }
+
+	// Function for loading tracking page
+	public function tracking()
+	{
+		$data = array(
+			'title' => 'Welcome to Delivisha logistics',
+		);
+
+		$this->template->load('public', 'default', 'tracking/index', $data);
+	}
 }

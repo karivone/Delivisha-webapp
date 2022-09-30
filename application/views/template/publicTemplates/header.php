@@ -18,5 +18,8 @@
     <title>Delivisha - <?= $title ?></title>
     <!-- Favicon icon -->
     <link rel="shortcut icon" type="image/png" href="<?= base_url() ?>public/assets/images/favicon.png">
+	<link href="<?= base_url() ?>public/assets/vendor/jquery-smartwizard/dist/css/smart_wizard.min.css" rel="stylesheet" type="text/css"/>
+	<link href="<?= base_url() ?>public/vendor/jquery-nice-select/css/nice-select.css" rel="stylesheet" type="text/css"/>
     <link href="<?= base_url() ?>public/assets/css/style.css" rel="stylesheet">
+	<link href="<?= base_url() ?>public/assets/css/main.css" rel="stylesheet">
 </head>

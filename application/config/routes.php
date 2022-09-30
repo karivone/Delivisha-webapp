@@ -52,6 +52,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 // Front-end Routes
 $route['default_controller'] = 'welcome';
+$route['tracking'] = 'Welcome/tracking';
 
 // Backend Routes
 $route['dashboard'] = 'backend/dashboard';

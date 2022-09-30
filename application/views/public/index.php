@@ -1,16 +1,17 @@
-<body class="body  h-100" style="background-image: url(<?= base_url('public/assets/images/bg-1.jpg') ?>); background-size:cover;">
+<body class="body  h-100 front-body"> 
 	<div class="container h-100">
 		<div class="row h-100 align-items-center justify-contain-center">
 			<div class="col-xl-12 mt-3">
 				<div class="card">
 					<div class="card-body p-0">
+
 						<div class="row m-0">
 							<div class="col-xl-6 col-md-6 sign text-center">
 								<div>
 									<div class="text-center my-5">
-										<a href="index.html"><img width="200" src="<?= base_url() ?>public/assets/images/logo-full.png" alt=""></a>
+										<a href="<?= base_url() ?>"><img width="200" src="<?= base_url() ?>public/assets/images/logo-full.png" alt=""></a>
 									</div>
-									<img src="<?= base_url() ?>public/assets/images/log.png" class="education-img"></img>
+									<img src="<?= base_url() ?>public/images/landing.svg" class="education-img"></img>
 								</div>	
 							</div>
 							
@@ -43,16 +44,18 @@
 											</div>
 										</div>
 										<div class="text-center">
-											<button type="submit" class="btn btn-primary btn-block">Sign Me In</button>
+											<button type="submit" class="btn btn-primary btn-block blinking-button">Sign Me In</button>
 										</div>
 									</form>
 								</div>
 							</div>
 							
 						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+<!-- style="background-image: url(<?= base_url('public/assets/images/bg-1.jpg') ?>); background-size:cover;" -->
