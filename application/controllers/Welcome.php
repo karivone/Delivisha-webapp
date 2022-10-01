@@ -2,6 +2,10 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
+/**
+ * @param - This file contains methodes for loading all the front pages
+ * @author - Dennis Otieno
+ */
 class Welcome extends CI_Controller
 {
     public function __construct()
@@ -9,10 +13,7 @@ class Welcome extends CI_Controller
         parent::__construct();
     }
 
-    /**
-     * @param - This function loads the landing page for the application
-     * @author - Dennis Otieno
-     */
+	// Function for loading the landing page
     public function index()
     {
         $data = array(
@@ -59,5 +60,15 @@ class Welcome extends CI_Controller
 		);
 
 		// Call the model and pass data to it
+	}
+
+	// Function for loading orders page
+	public function orders()
+	{
+		$data = array(
+			'title' => 'Place your order and get it delivered',
+		);
+
+		$this->template->load('public', 'default', 'orders/index', $data);
 	}
 }

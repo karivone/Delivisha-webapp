@@ -16,7 +16,7 @@
 	background-color: #eb4d4b;
 	border: 0;
 	padding: 10px 25px;
-	font-size: 20px;
+	font-size: 1.25 rem !important;
 	font-family: inherit;
 	border-radius: 3px;
 	cursor: pointer;

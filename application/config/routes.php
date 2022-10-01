@@ -55,6 +55,7 @@ $route['default_controller'] = 'welcome';
 $route['tracking'] = 'Welcome/tracking';
 $route['contact'] = 'welcome/contact';
 $route['customer/message'] = 'Welcome/send_message';
+$route['order'] = 'Welcome/orders';
 
 // Backend Routes
 $route['admin'] = 'backend/dashboard';

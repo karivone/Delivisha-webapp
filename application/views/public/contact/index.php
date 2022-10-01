@@ -25,7 +25,7 @@
 
 									<h4 class="fs-20 font-w800 text-black">Live us <span class="text-warning">a</span> Message</h4>
 									<div class="mb-3">
-										<span class="">Live a message and we will get back to you in 24 hours time.</span>
+										<span class="">Leave a message and we will get back to you in 24 hours time.</span>
 									</div>
 
 									 <form action="<?= site_url("customer/message") ?>" class="comment-form" id="contact_form" method="post">
@@ -63,7 +63,7 @@
 											</div>
 											<div class="col-lg-12">
 												<div class="mb-3">
-													<input type="submit" value="Send Message" class="submit btn btn-primary btn-sm btn-block" id="submit" name="submit">
+													<button type="submit" class="btn btn-primary btn-block blinking-button" id="">Send Message</button>
 												</div>
 											</div>
 										</div>

@@ -14,13 +14,14 @@
 									<div class="mb-3">
 										<span>NOTE: Login is restricted for <strong>Vendors</strong> and <strong>Riders</strong> only. If you are an existing customer use this link to access your accounts <a href="<?= site_url('customer_login') ?>" style="color:#ff6a59">Customer Login Here</a></span>
 									</div>
-                                    <form action="">
+                                    <form action="<?= site_url() ?>" method="post" id="userLoginForm">
+										<input type="hidden" name="<?= $this->security->get_csrf_token_name(); ?>" value="<?= $this->security->get_csrf_hash(); ?>">
                                         <div class="mb-3">
-                                            <label><strong>Password</strong></label>
+                                            <label><strong>Password or Phone-Number</strong></label>
                                             <input type="password" class="form-control" value="Password">
                                         </div>
                                         <div class="text-center">
-                                            <button type="submit" class="btn btn-primary btn-block">Unlock</button>
+                                            <button type="submit" class="btn btn-primary btn-block blinking-button">Unlock</button>
                                         </div>
                                     </form>
                                 </div>
